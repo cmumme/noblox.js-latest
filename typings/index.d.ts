@@ -1,7 +1,7 @@
 // Type definitions for noblox.js@4.8.0-0
 // Authored by Gamenew09 w/ changes by suufi
 
-declare module "noblox.js" {
+declare module "noblox.js-nightly" {
     // Interfaces/Types
     import * as events from "events";
     import * as stream from "stream";
@@ -1571,7 +1571,7 @@ declare module "noblox.js" {
      * 🔓 Returns information about the universe(s) in question, such as description, name etc; varies based on whether or not you're logged in.
      * @param universeId The universe(s) whose information are being fetched.
      */
-    function getUniverseInfo(universeIds: number[] | number, jar?: CookieJar): Promise<UniverseInformation>;
+    function getUniverseInfo(universeIds: number[] | number, jar?: CookieJar): Promise<UniverseInformation[]>;
 
     // You can create a developer product, but the productId returned does not match the actual developer product id needed by the endpoints.
     // It's strange, but the edit link on the product page has the id that Roblox wants so you can edit dev products.
