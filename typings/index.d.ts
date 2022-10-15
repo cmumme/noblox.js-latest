@@ -1402,6 +1402,12 @@ declare module "noblox.js-nightly" {
         repeat?: boolean;
     }
 
+    interface RatingDetails {
+        upVotes: number,
+        downVotes: number,
+        id: number
+    }
+
 
     // Functions
 
@@ -2407,4 +2413,11 @@ declare module "noblox.js-nightly" {
      * 🔐 Updates badge information.
      */
     function updateBadgeInfo(badgeId: number, name?: string, description?: string, enabled?: boolean, jar?: CookieJar): Promise<void>
+
+    /**
+     * ✅ Returns rating details on the universe(s) in question, such as upvotes and downvotes. 
+     * @param universeIds The universe(s) whose rating details are being fetched.
+     * @param jar 
+     */
+     function getUniverseRatings(universeIds: number[], jar?: CookieJar): Promise<RatingDetails[]>;
 }
