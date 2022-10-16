@@ -8,7 +8,7 @@ console.log(chalk.yellow(figlet.textSync('noblox.js', {
 })))
 
 console.log(`
-${chalk.underline('Thank you for installing noblox.js.')}
+${chalk.underline('Thank you for installing noblox.js nightly.')}
 
 ${chalk.bold('Documentation:')} https://noblox.js.org/ 
 ${chalk.bold('GitHub:')} https://github.com/noblox/noblox.js
