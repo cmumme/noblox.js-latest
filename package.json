@@ -1,6 +1,6 @@
 {
   "name": "noblox.js-nightly",
-  "version": "4.15.2",
+  "version": "4.15.3",
   "description": "(nightly) A Node.js wrapper for Roblox. (original from sentanos)",
   "main": "lib/index.js",
   "types": "typings/index.d.ts",
